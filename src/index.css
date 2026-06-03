@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-bain-dark bg-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-bain-red text-white px-6 py-3 font-semibold transition-colors duration-300 hover:bg-red-800 uppercase tracking-wider text-sm;
+  }
+  .btn-secondary {
+    @apply border-2 border-bain-dark text-bain-dark px-6 py-3 font-semibold transition-colors duration-300 hover:bg-bain-dark hover:text-white uppercase tracking-wider text-sm;
+  }
+}
